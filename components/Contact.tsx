@@ -107,22 +107,26 @@ export default function Contact() {
                 <form className="space-y-4" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block font-label-md text-label-md text-text-secondary mb-1.5 font-medium">
+                      <label htmlFor="contact-name" className="block font-label-md text-label-md text-text-secondary mb-1.5 font-medium">
                         Your Name
                       </label>
                       <input
                         className={inputClass}
+                        id="contact-name"
+                        name="name"
                         placeholder="e.g. Samuel Bekele"
                         required
                         type="text"
                       />
                     </div>
                     <div>
-                      <label className="block font-label-md text-label-md text-text-secondary mb-1.5 font-medium">
+                      <label htmlFor="contact-email" className="block font-label-md text-label-md text-text-secondary mb-1.5 font-medium">
                         Business Email
                       </label>
                       <input
                         className={inputClass}
+                        id="contact-email"
+                        name="email"
                         placeholder="name@company.com"
                         required
                         type="email"
@@ -130,10 +134,10 @@ export default function Contact() {
                     </div>
                   </div>
                   <div>
-                    <label className="block font-label-md text-label-md text-text-secondary mb-1.5 font-medium">
+                    <label htmlFor="contact-service" className="block font-label-md text-label-md text-text-secondary mb-1.5 font-medium">
                       Service of Interest
                     </label>
-                    <select className={inputClass}>
+                    <select className={inputClass} id="contact-service" name="service">
                       {serviceOptions.map((option) => (
                         <option key={option.value} value={option.value}>
                           {option.label}
@@ -142,11 +146,13 @@ export default function Contact() {
                     </select>
                   </div>
                   <div>
-                    <label className="block font-label-md text-label-md text-text-secondary mb-1.5 font-medium">
+                    <label htmlFor="contact-scope" className="block font-label-md text-label-md text-text-secondary mb-1.5 font-medium">
                       Project Scope & Goals
                     </label>
                     <textarea
                       className={inputClass}
+                      id="contact-scope"
+                      name="scope"
                       placeholder="Outline your key requirements, estimated timeline, or current system pain points..."
                       required
                       rows={3}
