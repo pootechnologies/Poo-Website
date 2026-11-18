@@ -41,9 +41,9 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="font-label-lg text-label-lg text-text-primary mb-space-md">
+            <h3 className="font-label-lg text-label-lg text-text-primary mb-space-md">
               Services
-            </h4>
+            </h3>
             <ul className="flex flex-col gap-space-xs font-body-sm text-body-sm text-text-muted">
               {serviceLinks.map((link) => (
                 <li
@@ -56,9 +56,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-label-lg text-label-lg text-text-primary mb-space-md">
+            <h3 className="font-label-lg text-label-lg text-text-primary mb-space-md">
               Company
-            </h4>
+            </h3>
             <ul className="flex flex-col gap-space-xs font-body-sm text-body-sm text-text-muted">
               {companyLinks.map((link) => (
                 <li
@@ -71,9 +71,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-label-lg text-label-lg text-text-primary mb-space-md">
+            <h3 className="font-label-lg text-label-lg text-text-primary mb-space-md">
               Connect
-            </h4>
+            </h3>
             <div className="flex flex-col gap-space-xs font-body-sm text-body-sm text-text-muted">
               {connectLinks.map((link) => (
                 <a
