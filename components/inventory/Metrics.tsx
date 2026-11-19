@@ -43,7 +43,7 @@ export default function InventoryMetrics() {
             inventory orchestration.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-xl">
           {stats.map((stat) => (
             <div
               key={stat.title}
@@ -71,8 +71,8 @@ export default function InventoryMetrics() {
               </div>
             </div>
           ))}
-          <Testimonials />
         </div>
+        <Testimonials />
       </div>
     </section>
   );

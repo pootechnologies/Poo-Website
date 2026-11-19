@@ -53,6 +53,7 @@ function ProjectCard({ project }: { project: Project }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
         <a
+          aria-label={`Discuss a project like ${project.title}`}
           className="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-pure/90 backdrop-blur-md flex items-center justify-center text-text-primary hover:bg-primary-container hover:text-on-primary transition-colors shadow"
           href="#contact"
         >
