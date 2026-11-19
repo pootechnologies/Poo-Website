@@ -95,9 +95,6 @@ export default function Testimonials() {
           <h3 className="font-headline-sm text-body-md font-bold text-text-primary tracking-tight">
             Enterprise Testimonials
           </h3>
-          <span className="px-2 py-0.5 rounded-full bg-surface-subtle text-text-muted font-label-code text-[11px]">
-            4 Case Studies
-          </span>
         </div>
         <div className="flex items-center gap-space-sm">
           <div className="hidden sm:flex items-center gap-1.5">
