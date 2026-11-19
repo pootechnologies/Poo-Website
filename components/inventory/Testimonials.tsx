@@ -16,17 +16,6 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    badge: "3d → 45s Rec.",
-    badgeClass: "text-text-muted font-medium",
-    quote:
-      "Po'o Technologies cut our stock reconciliation from 3 days to under 45 seconds across all 14 regional distribution depots.",
-    initials: "DH",
-    avatarClass:
-      "bg-gradient-to-b from-primary to-secondary-container text-on-primary",
-    name: "Dawit Haile",
-    role: "Supply Chain Director, Regional Dist.",
-  },
-  {
     badge: "Zero Drift",
     badgeClass: "text-emerald-700 font-medium bg-emerald-50 px-2 py-0.5 rounded-full",
     quote:
@@ -56,6 +45,17 @@ const testimonials: Testimonial[] = [
     avatarClass: "bg-primary/10 text-primary",
     name: "Sara Alemu",
     role: "Procurement Lead, Nile FMCG Group",
+  },
+  {
+    badge: "3d → 45s Rec.",
+    badgeClass: "text-text-muted font-medium",
+    quote:
+      "Po'o Technologies cut our stock reconciliation from 3 days to under 45 seconds across all 14 regional distribution depots.",
+    initials: "DH",
+    avatarClass:
+      "bg-gradient-to-b from-primary to-secondary-container text-on-primary",
+    name: "Dawit Haile",
+    role: "Supply Chain Director, Regional Dist.",
   },
 ];
 

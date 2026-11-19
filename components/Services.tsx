@@ -17,7 +17,7 @@ const services: Service[] = [
     icon: "inventory_2",
     title: "Inventory Management",
     href: "/inventory",
-    cta: "Deploy",
+    cta: "View",
     ctaIcon: "arrow_forward",
     description:
       "Real-time multi-warehouse control designed to prevent stockouts, audit supply levels, and automate precision purchasing cycles.",
@@ -27,13 +27,13 @@ const services: Service[] = [
       "Predictive restocking alerts & vendor PO automation",
       "Custom tax valuation metrics (FIFO / LIFO / Weighted)",
     ],
-    tags: ["PostgreSQL", "Redis", "Python"],
+    tags: [],
   },
   {
     icon: "local_cafe",
     title: "Caffee Management",
     href: "/#contact",
-    cta: "Deploy",
+    cta: "View",
     ctaIcon: "arrow_forward",
     description:
       "End-to-end POS, digital tableside orders, and seamless kitchen display coordination built for speed during peak rush hours.",
@@ -43,13 +43,13 @@ const services: Service[] = [
       "Ingredient-level inventory deduction per cup & meal",
       "Dynamic QR table orders, staff shifts & end-of-day revenue",
     ],
-    tags: ["React", "WebSockets", "Chapa / Telebirr"],
+    tags: [],
   },
   {
     icon: "directions_bus",
     title: "Bus Management",
     href: "/#contact",
-    cta: "Deploy",
+    cta: "View",
     ctaIcon: "arrow_forward",
     description:
       "Intelligent transit dispatching, digital commuter ticketing, and comprehensive telematics for urban and cross-country bus fleets.",
@@ -59,7 +59,7 @@ const services: Service[] = [
       "Driver duty roster, shift logs & speeding safety alerts",
       "Fuel consumption analysis & predictive maintenance schedules",
     ],
-    tags: ["GIS / Maps", "MQTT", "Next.js"],
+    tags: [],
   },
 ];
 

@@ -1,50 +1,5 @@
+import Image from "next/image";
 import Icon from "@/components/Icon";
-
-type WarehouseNode = {
-  name: string;
-  iconClass: string;
-  badge: string;
-  badgeClass: string;
-  progress: number;
-  barClass: string;
-  capacity: string;
-  queue: string;
-  queueClass?: string;
-};
-
-const nodes: WarehouseNode[] = [
-  {
-    name: "Addis Ababa Central Hub",
-    iconClass: "text-primary",
-    badge: "OPTIMAL",
-    badgeClass: "bg-emerald-50 text-emerald-700",
-    progress: 78,
-    barClass: "bg-primary",
-    capacity: "Capacity: 78% (34,120 / 43,500 m³)",
-    queue: "18 Dispatches in Queue",
-  },
-  {
-    name: "Hawassa Logistics Hub",
-    iconClass: "text-secondary-container",
-    badge: "HIGH TURNOVER",
-    badgeClass: "bg-blue-50 text-primary",
-    progress: 62,
-    barClass: "bg-secondary-container",
-    capacity: "Capacity: 62% (15,400 / 25,000 m³)",
-    queue: "6 Inbound Racks Receiving",
-  },
-  {
-    name: "Dire Dawa Port Transit",
-    iconClass: "text-amber-500",
-    badge: "CUSTOMS CLEARING",
-    badgeClass: "bg-amber-50 text-amber-700",
-    progress: 89,
-    barClass: "bg-amber-500",
-    capacity: "Capacity: 89% (High Load)",
-    queue: "2 Reorder Triggers Fired",
-    queueClass: "text-amber-700",
-  },
-];
 
 export default function InventoryHero() {
   return (
@@ -72,58 +27,17 @@ export default function InventoryHero() {
               </a>
             </div>
           </div>
-          {/* Right Interactive Hub Telemetry Preview Card */}
+          {/* Right Hero Image */}
           <div className="w-full lg:w-5/12">
-            <div className="bg-surface-pure rounded-2xl shadow-xl overflow-hidden flex flex-col">
-              {/* Terminal Header Bar */}
-              <div className="bg-text-primary px-space-md py-3 flex items-center justify-between text-on-primary">
-                <div className="flex items-center gap-2">
-                  <Icon name="hub" className="text-primary text-[20px]" />
-                  <span className="font-headline-sm text-label-lg font-semibold tracking-tight">
-                    Active Node Telemetry
-                  </span>
-                </div>
-                <div className="flex items-center gap-2 font-label-code text-[11px] text-outline-variant">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                </div>
-              </div>
-              {/* Warehouse Node List */}
-              <div className="p-space-md flex flex-col gap-space-md bg-surface-canvas/50">
-                {nodes.map((node) => (
-                  <div
-                    key={node.name}
-                    className="bg-surface-pure p-space-sm rounded-xl shadow-sm hover:shadow-md transition-all"
-                  >
-                    <div className="flex items-center justify-between mb-1.5">
-                      <div className="flex items-center gap-2">
-                        <Icon name="location_on" className={`${node.iconClass} text-[18px]`} />
-                        <span className="font-headline-sm text-body-md font-semibold text-text-primary">
-                          {node.name}
-                        </span>
-                      </div>
-                      <span
-                        className={`px-2 py-0.5 rounded-full font-label-code text-[11px] ${node.badgeClass}`}
-                      >
-                        {node.badge}
-                      </span>
-                    </div>
-                    <div className="w-full bg-surface-subtle h-2 rounded-full overflow-hidden mb-2">
-                      <div
-                        className={`${node.barClass} h-full rounded-full`}
-                        style={{ width: `${node.progress}%` }}
-                      />
-                    </div>
-                    <div className="flex items-center justify-between font-label-code text-body-sm text-text-muted">
-                      <span>{node.capacity}</span>
-                      <span
-                        className={`text-text-primary font-medium ${node.queueClass ?? ""}`}
-                      >
-                        {node.queue}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl bg-surface-pure">
+              <Image
+                src="/assets/logo_hero.png"
+                alt="Inventory Management"
+                width={1140}
+                height={427}
+                className="w-full h-auto"
+                priority
+              />
             </div>
           </div>
         </div>
