@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 
@@ -30,9 +31,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl">
           <div>
             <div className="flex items-center gap-space-sm mb-space-sm">
-              {/* Logo temporarily hidden
-              <img alt="Po'o Technologies Logo" className="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCMjpZNIX30dtnnhT7cw6pLQSN4o-BL66pXd8fVfvNGW5WuDd3alLLrAk7ktCDXdDCq75zl48YrbMb49O00g0CyZJYeCjJr6JSiJ3kFqeOSRW4bN9ne3n6cY7WBT8369Wohblh8mpjmgsPrdVaOPkqSqJai0oJRC648ZE-Xsp_WlXL-9Ti_hzN7rFMjlQbi9d8LkrYpsMjmFJLXLnn8-BIksXz3RvkDAfu_SWjV0cHz" />
-              */}
+              <Image alt="Po'o Technologies Logo" className="h-[100px] w-auto object-contain dark:hidden" height={250} src="/assets/logo_dark.png" width={250} />
+              <Image alt="Po'o Technologies Logo" className="hidden h-[100px] w-auto object-contain dark:block" height={250} src="/assets/logo_white.png" width={250} />
               <span className="font-headline-sm text-headline-sm text-text-primary tracking-tight">Po&apos;o Technologies</span>
             </div>
             <p className="font-body-sm text-body-sm text-text-muted leading-relaxed">
